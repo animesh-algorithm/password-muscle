@@ -1,0 +1,65 @@
+*::before, *::after, * {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(22, 18, 18);
+}
+
+.outer-container {
+    display: inline-flex;
+}
+
+.outer-container .strength-meter, .outer-container .requirement-specification {
+    background: rgb(68, 61, 61);
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+#progress-bar {
+    position: relative;
+    margin: auto;
+    height: 30px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar::before {
+    /* --strength: 80; */
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: calc(1% * var(--strength));
+    background: rgb(22, 18, 18);
+    transition: width 300ms;
+}
+
+#password-input {
+    margin: auto;
+    padding: 0.25rem 0.75rem;
+    width: 89%;
+    text-align: center;
+}
+
+#hide-button {
+    background: rgb(22, 18, 18);
+    margin: auto;
+    width: 30%;
+}
+
+#complexity-section {
+    margin: auto;
+    width: 100%;
+    background: rgb(68, 61, 61);
+    ;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+#complexities {
+    color: rgb(192, 180, 180);
+}

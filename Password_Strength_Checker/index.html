@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body class='text-center text-white'>
+    <div class="container">
+        <h2>Password Muscle</h2>
+        <div class="outer-container container">
+            <div class="container strength-meter">
+                <h5 class='mt-2'>Test your password</h5>
+                <hr>
+                <div id="progress-bar" class='mt-4'></div>
+                <input type="password" class='input-group mt-4' id='password-input' placeholder="Enter Password here..." autofocus>
+                <hr>
+                <div id="hide-button" class='mt-4'>  
+                    <h5>Hide</h5>
+                    <input type="checkbox" id='hide' checked>
+                </div>
+            </div>
+            <div class="container requirement-specification">
+                <h5>Minimum Requirements</h5>
+                <hr>
+                <p class="">Minimum 8 characters in length</p>
+                <hr>
+                <p class=""> Contains 3/4 of the following items: <br>
+                    - Uppercase Letters <br>
+                    - Lowercase Letters
+                    <br>
+                    - Numbers
+                    <br>
+                    - Symbols</p>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div id="complexity-section">
+                <h3>Complexities</h3>
+                <hr>
+                <div id="complexities" class='lead'></div>
+                <!-- <div>Reason1</div>
+                <div>Reason2</div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
